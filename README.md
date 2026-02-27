@@ -3,4 +3,5 @@ Projet en Java consistant à développer le jeu Bataille Navale
 
 Diagramme de séquence :
 
-<img width="753" height="732" alt="image" src="https://github.com/user-attachments/assets/d8f73139-8c32-4166-b743-9d14f735f1e6" />
+<img width="1233" height="1793" alt="image" src="https://github.com/user-attachments/assets/6e221132-83e7-4a0b-831d-882aebdc6a5c" />
+
