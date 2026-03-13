@@ -8,7 +8,12 @@ public class Jeu {
     public boolean partieTerminee;
 
 
-
+public Jeu(Joueur joueur1, Joueur joueur2, Joueur joueurActif, boolean partieTerminee){
+    this.joueur1 = joueur1;
+    this.joueur2 = joueur2;
+    this.joueurActif = joueurActif;
+    this.partieTerminee = partieTerminee;
+}
 
     public void demarrerPartie() {}
 
