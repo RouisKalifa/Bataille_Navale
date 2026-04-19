@@ -9,4 +9,12 @@ module com.devops.bataillenavale {
 
     opens com.devops.bataillenavale to javafx.fxml;
     exports com.devops.bataillenavale;
+
+    opens com.devops.bataillenavale.view to javafx.fxml;
+    exports com.devops.bataillenavale.view;
+
+    opens com.devops.bataillenavale.controller to javafx.fxml;
+    exports com.devops.bataillenavale.controller;
+
+    exports com.devops.bataillenavale.network;
 }

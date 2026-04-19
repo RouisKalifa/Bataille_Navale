@@ -1,5 +1,6 @@
 package com.devops.bataillenavale;
 
+import com.devops.bataillenavale.view.HelloApplication;
 import javafx.application.Application;
 
 public class Launcher {
@@ -7,3 +8,5 @@ public class Launcher {
         Application.launch(HelloApplication.class, args);
     }
 }
+
+

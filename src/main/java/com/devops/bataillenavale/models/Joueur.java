@@ -22,4 +22,3 @@ public class Joueur {
         return adversaire.getGrille().recevoirTir(x, y);
     }
 }
-

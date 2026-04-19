@@ -37,7 +37,8 @@ public class Jeu {
         // Vérifier victoire
         if (adversaire.getGrille().tousBateauxCoules()) {
             partieTerminee = true;
-        } else {
+        } else if (resultat == ResultatTir.RATE) {
+            // On change de joueur uniquement si raté — si touché le joueur rejoue
             changerJoueur();
         }
 
@@ -54,5 +55,13 @@ public class Jeu {
 
     public boolean estPartieTerminee() {
         return partieTerminee;
+    }
+
+    public Joueur getJoueur1() {
+        return joueur1;
+    }
+
+    public Joueur getJoueur2() {
+        return joueur2;
     }
 }

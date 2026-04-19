@@ -2,6 +2,7 @@ package com.devops.bataillenavale.models;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Grille {
 
@@ -23,20 +24,21 @@ public class Grille {
         }
     }
 
+    public boolean peutPlacerBateau(int x, int y, int tailleBateau, boolean horizontal) {
+        for (int i = 0; i < tailleBateau; i++) {
+            int newX = horizontal ? x + i : x;
+            int newY = horizontal ? y : y + i;
+            if (newX >= taille || newY >= taille || newX < 0 || newY < 0) return false;
+            if (cases[newX][newY].contientBateau()) return false;
+        }
+        return true;
+    }
+
     public boolean placerBateau(Bateau bateau, int x, int y, boolean horizontal) {
 
         // Vérifier si le placement est possible
-        for (int i = 0; i < bateau.getTaille(); i++) {
-            int newX = horizontal ? x + i : x;
-            int newY = horizontal ? y : y + i;
-
-            if (newX >= taille || newY >= taille) {
-                return false;
-            }
-
-            if (cases[newX][newY].contientBateau()) {
-                return false;
-            }
+        if (!peutPlacerBateau(x, y, bateau.getTaille(), horizontal)) {
+            return false;
         }
 
         // Placer le bateau
@@ -59,12 +61,8 @@ public class Grille {
     }
 
     public boolean tousBateauxCoules() {
-        for (Bateau b : bateaux) {
-            if (!b.estCoule()) {
-                return false;
-            }
-        }
-        return true;
+        // Stream : vérifie que TOUS les bateaux de la liste sont coulés
+        return bateaux.stream().allMatch(Bateau::estCoule);
     }
 
     public Case getCase(int x, int y) {
