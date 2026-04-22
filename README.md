@@ -9,14 +9,14 @@
 
 ##  Sommaire
 
-- [Présentation](#-présentation)
-- [Fonctionnalités](#-fonctionnalités)
-- [Lancer l'application](#-lancer-lapplication)
-- [Architecture](#-architecture)
-- [Diagramme de classes](#-diagramme-de-classes)
-- [Diagramme de séquence](#-diagramme-de-séquence)
-- [Structure du projet](#-structure-du-projet)
-- [Notions appliquées](#-notions-appliquées)
+- [Présentation](#présentation)
+- [Fonctionnalités](#fonctionnalités)
+- [Lancer l'application](#lancer-lapplication)
+- [Architecture](#architecture)
+- [Diagramme de classes](#diagramme-de-classes)
+- [Diagramme de séquence](#diagramme-de-séquence)
+- [Structure du projet](#structure-du-projet)
+- [Notions appliquées](#notions-appliquées)
 
 ---
 
