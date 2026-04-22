@@ -74,12 +74,12 @@ mvn exec:java -Dexec.mainClass="com.devops.bataillenavale.network.BatailleNavale
 
 **3. Lancer le client — Joueur 1** (dans un nouveau terminal)
 ```bash
-mvn javafx:run
+clic droit sur Launcher et run
 ```
 
 **4. Lancer le client — Joueur 2** (dans un autre terminal)
 ```bash
-mvn javafx:run
+clic droit sur Launcher et run
 ```
 
 > ⚠️ Le serveur doit être lancé **avant** les clients. Les deux fenêtres client peuvent être lancées sur la même machine ou sur deux machines différentes (modifier `serveur.adresse` dans `config.properties`).
