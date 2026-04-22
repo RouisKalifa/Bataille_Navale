@@ -1,4 +1,4 @@
-# ⚓ Bataille Navale — Java / JavaFX
+#  Bataille Navale — Java / JavaFX
 
 > Jeu de Bataille Navale en réseau, développé dans le cadre de la Licence Pro DevOps à l'Université Claude Bernard Lyon 1 (2025-2026).
 
@@ -7,7 +7,7 @@
 
 ---
 
-## 📋 Sommaire
+##  Sommaire
 
 - [Présentation](#-présentation)
 - [Fonctionnalités](#-fonctionnalités)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🎮 Présentation
+##  Présentation
 
 La Bataille Navale est un jeu de stratégie en réseau opposant **2 joueurs** depuis deux machines distinctes. Le projet repose sur une architecture **client-serveur TCP** :
 
@@ -29,19 +29,19 @@ La Bataille Navale est un jeu de stratégie en réseau opposant **2 joueurs** de
 
 ---
 
-## ✅ Fonctionnalités
+##  Fonctionnalités
 
-- 🔗 Connexion au serveur avec saisie du prénom
-- 🚢 Placement interactif de 5 bateaux sur une grille 10x10 (horizontal / vertical)
-- 🎯 Combat en temps réel avec alternance des tours
-- 💥 Détection automatique des tirs (raté, touché, coulé)
-- 💬 Chat en temps réel intégré à l'écran de jeu
-- 🏆 Écran de victoire avec option rejouer
-- 🔄 Système de reconnexion automatique (10 tentatives)
+-  Connexion au serveur avec saisie du prénom
+-  Placement interactif de 5 bateaux sur une grille 10x10 (horizontal / vertical)
+-  Combat en temps réel avec alternance des tours
+-  Détection automatique des tirs (raté, touché, coulé)
+-  Chat en temps réel intégré à l'écran de jeu
+-  Écran de victoire avec option rejouer
+-  Système de reconnexion automatique (10 tentatives)
 
 ---
 
-## 🚀 Lancer l'application
+##  Lancer l'application
 
 ### Prérequis
 
@@ -82,11 +82,11 @@ clic droit sur Launcher et run
 clic droit sur Launcher et run
 ```
 
-> ⚠️ Le serveur doit être lancé **avant** les clients. Les deux fenêtres client peuvent être lancées sur la même machine ou sur deux machines différentes (modifier `serveur.adresse` dans `config.properties`).
+>  Le serveur doit être lancé **avant** les clients. Les deux fenêtres client peuvent être lancées sur la même machine ou sur deux machines différentes (modifier `serveur.adresse` dans `config.properties`).
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 L'application suit une architecture **client-serveur TCP** avec le pattern **MVC** côté client.
 
@@ -118,7 +118,7 @@ L'application suit une architecture **client-serveur TCP** avec le pattern **MVC
 
 ---
 
-## 📊 Diagramme de classes
+##  Diagramme de classes
 
 ```mermaid
 classDiagram
@@ -282,7 +282,7 @@ classDiagram
 
 ---
 
-## 🔄 Diagramme de séquence
+##  Diagramme de séquence
 
 ```mermaid
 sequenceDiagram
@@ -351,7 +351,7 @@ sequenceDiagram
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 BatailleNavale/
@@ -393,7 +393,7 @@ BatailleNavale/
 
 ---
 
-## 📚 Notions appliquées
+##  Notions appliquées
 
 | Notion | Application dans le projet |
 |--------|---------------------------|
@@ -414,7 +414,7 @@ BatailleNavale/
 
 ---
 
-## 👥 Auteurs
+##  Auteurs
 
 | Nom | GitHub |
 |-----|--------|
