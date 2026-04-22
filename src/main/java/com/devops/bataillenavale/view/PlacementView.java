@@ -218,8 +218,11 @@ public class PlacementView {
         if (bateauSelectIndex == -1) return;
         int taille = Integer.parseInt(bateauxDefinition[bateauSelectIndex][1]);
         for (int[] c : getCasesOccupees(row, col, taille, horizontal)) {
-            if (dansGrille(c) && controller.peutPlacerBateau(c[0], c[1], 1, true))
+            if (!dansGrille(c)) continue;
+            if (controller.peutPlacerBateau(c[0], c[1], 1, true))
                 boutonsGrille[c[0]][c[1]].setStyle(STYLE_VIDE);
+            else
+                boutonsGrille[c[0]][c[1]].setStyle(STYLE_BATEAU);
         }
     }
 
