@@ -419,7 +419,7 @@ BatailleNavale/
 | Nom | GitHub |
 |-----|--------|
 | Kalifa Rouis | [@RouisKalifa](https://github.com/RouisKalifa) |
-| Hichem Meneceur | — |
+| Hichem Meneceur | https://github.com/Hiishaa |
 
 ---
 
