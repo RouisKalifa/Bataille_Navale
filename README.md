@@ -61,16 +61,11 @@ serveur.nb.joueurs=2
 
 ### Étapes de lancement
 
-**1. Compiler le projet**
+**1. Lancer le serveur**
 ```bash
-mvn clean install
+clic droit sur BatailNavalServeur puis run
 ```
 
-**2. Lancer le serveur** (dans un terminal séparé)
-```bash
-mvn exec:java -Dexec.mainClass="com.devops.bataillenavale.network.BatailleNavaleServer"
-```
-> Le serveur affiche dans la console : `[Serveur] En attente de 2 joueurs...`
 
 **3. Lancer le client — Joueur 1** (dans un nouveau terminal)
 ```bash
